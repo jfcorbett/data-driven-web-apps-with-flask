@@ -1,3 +1,13 @@
+
+app/ch05_jinja_templates/flasktut/.idea/
+app/ch06_routing/flasktut/.idea/
+app/ch07_bootstrap/flasktut/.idea/
+app/ch08_adding_our_design/flasktut/.idea/
+app/ch09_sqlalchmey/flasktut/.idea/
+app/ch10_using_sqlachemy/flasktut/.idea/
+app/ch11_migrations/flasktut/.idea/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
