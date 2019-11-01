@@ -22,10 +22,10 @@
                 <h2>New releases</h2>
                 <div class="subtitle">Hot off the press: the newest project releases</div>
 
-                {% for p in packages %}
+                {% for r in releases %}
                 <div class="project">
-                    <div class="title"><a href="#">{{ p.name }} {{ p.version }}</a></div>
-                    <div class="desc">DESCRIPTION</div>
+                    <div class="title"><a href="/project/{{ r.package.id }}">{{ r.package.id }} {{ r.version_text }}</a></div>
+                    <div class="desc">{{r.package.summary}}</div>
                 </div>
                 {% endfor %}
             </div>
