@@ -1,0 +1,121 @@
+body {
+    background-color: white;
+    color: #222;
+    margin: 0px;
+    padding: 0px;
+    background-color: #006dad;
+}
+
+/*.title {*/
+/*    font-weight: bold;*/
+/*}*/
+
+.main_content {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+nav {
+    background-color: #0083c7;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    height: 65px;
+}
+
+nav > a {
+    color: white;
+    margin-right: 10px;
+}
+
+.hero {
+    background-color: #0073b7;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-inner {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 500px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-control {
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.pypi-stats {
+    background-color: #ececec;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 30px;
+}
+
+.pypi-stats .stat {
+    display: inline-block;
+    min-width: 170px;
+    padding: 10px;
+    font-size: 16px;
+    color: #003d61;
+}
+
+.project-list {
+    margin-top: 20px;
+}
+
+.project-list h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-list .subtitle {
+    font-style: italic;
+}
+
+.project-list .project {
+    background-color: #ececec;
+    color: black;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    min-height: 45px;
+}
+.project-list .project .title {
+    font-size: 20px;
+}
+.project-list .project .desc {
+    font-size: 16px;
+    font-style: italic;
+}
+.project-list .project a {
+    color: #006dad;
+}
+
+footer {
+    color: white;
+    padding: 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer a {
+    color: #2495f2;
+}
