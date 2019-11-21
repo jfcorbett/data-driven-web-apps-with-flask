@@ -28,9 +28,8 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=720000'
 
 # Be sure to put your info here:
-git config --global user.email "you@email.com"
-git config --global user.name "Your name"
-
+git config --global user.email "jfcorbett@yahoo.com"
+git config --global user.name "Jean-François Corbett"
 # Web app file structure
 mkdir /apps
 chmod 777 /apps
