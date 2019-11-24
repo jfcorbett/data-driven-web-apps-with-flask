@@ -52,15 +52,15 @@ cd /apps
 git clone https://github.com/talkpython/data-driven-web-apps-with-flask app_repo
 
 # Setup the web app:
-cd cd /apps/app_repo/app/ch15_deploy/final/
+cd cd /apps/app_repo/app/ch15_deploy/flasktut/
 pip install -r requirements.txt
 
 # Copy and enable the daemon
-cp /apps/app_repo/app/ch15_deploy/final/server/pypi.service /etc/systemd/system/pypi.service
+cp /apps/app_repo/app/ch15_deploy/flasktut/server/pypi.service /etc/systemd/system/pypi.service
 
 systemctl start pypi
 systemctl status pypi
-systemctl enable pypi
+systemctl enable pypi  # daemon will restart automatically after reboot
 
 # Setup the public facing server (NGINX)
 apt install nginx
@@ -68,7 +68,7 @@ apt install nginx
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
-cp /apps/app_repo/app/ch15_deploy/final/server/pypi.nginx /etc/nginx/sites-enabled/pypi.nginx
+cp /apps/app_repo/app/ch15_deploy/flasktut/server/pypi.nginx /etc/nginx/sites-enabled/pypi.nginx
 update-rc.d nginx enable
 service nginx restart
 
