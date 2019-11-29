@@ -4,6 +4,10 @@ import pypi_org.data.db_session as db_session
 from pypi_org.data.package import Package
 from pypi_org.data.releases import Release
 
+# Make it run more easily outside of PyCharm
+sys.path.insert(0, os.path.abspath(os.path.join(
+    os.path.dirname(__file__), "..", "..")))
+
 
 def main():
     init_db()
@@ -33,20 +37,6 @@ def insert_a_package():
     r.build_ver = int(input('Build version: '))
     r.size = int(input('Size (bytes): '))
     p.releases.append(r)
-
-    """
-        id = sa.Column(sa.Integer, primary_key=True, autoincrement=True)
-
-    major_ver = sa.Column(sa.BigInteger, index=True)
-    minor_ver = sa.Column(sa.BigInteger, index=True)
-    build_ver = sa.Column(sa.BigInteger, index=True)
-
-    created_date = sa.Column(sa.DateTime, default=datetime.datetime.now, index=True)
-    comment = sa.Column(sa.String)
-    url = sa.Column(sa.String)
-    size = sa.Column(sa.BigInteger)
-
-    """
 
     session = db_session.create_session()
     # make a bunch of changes
