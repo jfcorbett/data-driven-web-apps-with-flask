@@ -49,7 +49,7 @@ pip install --upgrade uwsgi
 
 # clone the repo:
 cd /apps
-git clone https://github.com/talkpython/data-driven-web-apps-with-flask app_repo
+git clone https://github.com/jfcorbett/data-driven-web-apps-with-flask.git app_repo
 
 # Setup the web app:
 cd cd /apps/app_repo/app/ch15_deploy/flasktut/
